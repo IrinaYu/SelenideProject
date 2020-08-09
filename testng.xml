@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="false">
+
+    <parameter name="waitTimeOutInSeconds" value="10"></parameter>
+    <parameter name="browserName" value="Chrome"></parameter>
+
+    <test name="LoginToJira">
+        <classes>
+            <class name="LoginToJira">
+            <methods>
+                <include name="successfulLoginTest"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="utils.TestNGListener"/>
+    </listeners>
+
+</suite>
