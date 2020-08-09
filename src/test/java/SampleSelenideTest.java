@@ -27,6 +27,5 @@ public class SampleSelenideTest {
     Configuration.assertionMode = AssertionMode.STRICT;
     $(By.id("header-details-user-fullname")).shouldBe(Condition.visible);
     //Configuration.assertionMode = Configuration.assertionMode.SOFT;
-
   }
 }
